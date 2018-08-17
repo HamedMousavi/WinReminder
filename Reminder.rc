@@ -1,0 +1,476 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Reminder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Reminder Release 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX,WS_EX_RTLREADING
+    LTEXT           "Copyright (C) 2005\n\nHamedMosavi @ gmail.com",
+                    IDC_STATIC,40,19,119,26
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Reminder MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Reminder\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Reminder.EXE\0"
+            VALUE "ProductName", "Reminder Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Reminder..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_REMINDER_DIALOG DIALOGEX 0, 0, 132, 75
+STYLE WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_RIGHT | WS_EX_RTLREADING | WS_EX_APPWINDOW
+FONT 12, "Arabic Transparent"
+BEGIN
+    GROUPBOX        "«„—Ê“...",IDC_STATIC,7,0,112,37,0,WS_EX_RIGHT | 
+                    WS_EX_RTLREADING
+    LTEXT           " «—ÌŒ",IDC_DATE_TXT,101,10,16,8
+    EDITTEXT        IDC_DATE,17,7,80,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP,WS_EX_RTLREADING
+    LTEXT           "”«⁄ ",IDC_STATIC,100,24,17,8
+    EDITTEXT        IDC_TIME,17,21,80,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP,WS_EX_RTLREADING
+    EDITTEXT        IDC_MESSAGE,7,39,112,34,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,0,0,6,76
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_REMINDER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENUEX DISCARDABLE 
+BEGIN
+    POPUP "Main Menu",                      65535,
+    MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "»Â Œ«ÿ— ”Å—œ‰  «—ÌŒ ÃœÌœ",    32773,MFT_STRING,MFS_ENABLED
+        MENUITEM "‘„«—‰œÂ",                     32774,MFT_STRING,MFS_ENABLED
+        MENUITEM "À»  —Ê“Â«Ì  «—ÌŒÌ",           32778,MFT_STRING,MFS_ENABLED
+        MENUITEM " ‰ŸÌ„« ",                     32771,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "œ— „Ê—œ »—‰«„Â...",           32777,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Œ—ÊÃ",                        32772,MFT_STRING,MFS_ENABLED
+    END
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0x29, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FAR)
+#ifdef _WIN32
+LANGUAGE 0x29, 0x1
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGS DIALOGEX 0, 0, 231, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " ‰ŸÌ„« "
+FONT 12, "Arabic Transparent", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   " «ÌÌœ",IDOK,10,38,38,10
+    PUSHBUTTON      "«‰’—«›",IDCANCEL,10,52,38,10
+    CONTROL         "«Ã—«Ì ŒÊœò«— »« Â— »«— Ê—Êœ »Â Windows",IDC_STARTUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,86,40,131,7,
+                    WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP,0,0,300,51
+    GROUPBOX        "",IDC_STATIC,6,29,221,60
+END
+
+IDD_HISTORICAL DIALOG DISCARDABLE  0, 0, 333, 244
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Historical Date Times"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,268,211,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,214,211,50,14
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP,0,0,333,40
+    GROUPBOX        "Date && Reminder adjustments",IDC_STATIC,6,44,322,193
+    LTEXT           "Date",IDC_STATIC,25,65,21,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,47,62,105,15
+    LTEXT           "Show me this message in reminder:",IDC_STATIC,15,150,
+                    111,8
+    EDITTEXT        IDC_MESSAGE,138,151,181,50,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    GROUPBOX        "Special effects",IDC_STATIC,164,55,152,31
+    COMBOBOX        IDC_COMBO3,212,66,98,224,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Date is a",IDC_STATIC,175,68,29,8
+    EDITTEXT        IDC_EDIT6,32,112,221,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Remind me ...",IDC_STATIC,17,93,299,47
+    PUSHBUTTON      "Change",IDC_CHANGE_DATE,259,112,50,14
+END
+
+IDD_DATE_DLG DIALOG DISCARDABLE  0, 0, 333, 255
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Date"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,268,234,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,234,50,14
+    GROUPBOX        "Remind me ...",IDC_STATIC,7,44,319,184
+    CONTROL         "Daily",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,23,61,31,10
+    CONTROL         "Weekly",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,23,74,40,
+                    10
+    CONTROL         "Monthly",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,23,87,
+                    41,10
+    LTEXT           "Every",IDC_STATIC,93,61,19,8
+    EDITTEXT        IDC_EDIT5,118,59,29,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,148,59,
+                    11,14
+    LTEXT           "Week(s) On:",IDC_STATIC,167,62,41,8
+    CONTROL         "Mon",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    97,78,30,10
+    CONTROL         "Tue",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    135,78,29,10
+    CONTROL         "Wed",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    172,78,31,10
+    CONTROL         "Thur",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    211,78,31,10
+    CONTROL         "Fri",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    250,78,23,10
+    CONTROL         "Sat",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    281,78,27,10
+    CONTROL         "Sun",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    97,93,29,10
+    GROUPBOX        "",IDC_STATIC,14,53,59,54
+    GROUPBOX        "",IDC_STATIC,82,53,236,54
+    GROUPBOX        "Daily Frequency",IDC_STATIC,14,108,304,66
+    CONTROL         "Once at:",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,23,120,43,10
+    CONTROL         "Every",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,23,139,34,
+                    10
+    CONTROL         "DateTimePicker3",IDC_DATETIMEPICKER3,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,94,118,
+                    105,15
+    EDITTEXT        IDC_EDIT6,93,137,29,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,123,
+                    137,11,14
+    COMBOBOX        IDC_COMBO2,140,137,59,151,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker3",IDC_DATETIMEPICKER4,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,243,135,
+                    58,15
+    CONTROL         "DateTimePicker3",IDC_DATETIMEPICKER5,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,243,154,
+                    58,15
+    LTEXT           "Starting at:",IDC_STATIC,205,138,35,8
+    LTEXT           "Ending at:",IDC_STATIC,205,157,33,8
+    GROUPBOX        "Duration",IDC_STATIC,14,174,304,47
+    LTEXT           "Start Date:",IDC_STATIC,28,189,35,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,65,187,74,15
+    CONTROL         "End date",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,182,189,45,10
+    CONTROL         "No end date",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,182,
+                    205,55,10
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER6,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,233,187,68,15
+    CONTROL         140,IDC_STATIC,"Static",SS_BITMAP,0,0,333,40
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_HISTORICAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_DATE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Reminder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Reminder.ico"
+IDI_TRAY                ICON    DISCARDABLE     "res\\bel.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HANDLE              BITMAP  DISCARDABLE     "res\\latch.bmp"
+IDB_ADJUST              BITMAP  DISCARDABLE     "res\\adj.bmp"
+IDB_SMALL_ADJ           BITMAP  DISCARDABLE     "res\\ladj.bmp"
+IDB_HISTORY             BITMAP  DISCARDABLE     "res\\History.bmp"
+IDB_DATE                BITMAP  DISCARDABLE     "res\\Date.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_HISTORICAL DLGINIT
+BEGIN
+    IDC_COMBO3, 0x403, 10, 0
+0x6942, 0x7472, 0x2068, 0x6164, 0x0079, 
+    IDC_COMBO3, 0x403, 12, 0
+0x6557, 0x6464, 0x6e69, 0x2067, 0x6164, 0x0079, 
+    IDC_COMBO3, 0x403, 16, 0
+0x7247, 0x6461, 0x6175, 0x6974, 0x6e6f, 0x6420, 0x7461, 0x0065, 
+    IDC_COMBO3, 0x403, 17, 0
+0x6946, 0x646e, 0x6e69, 0x2067, 0x6f6a, 0x2062, 0x6164, 0x2179, "\000" 
+    IDC_COMBO3, 0x403, 15, 0
+0x6843, 0x6c69, 0x2064, 0x6f62, 0x6e72, 0x6420, 0x7961, "\000" 
+    IDC_COMBO3, 0x403, 33, 0
+0x6946, 0x646e, 0x6e69, 0x2067, 0x6966, 0x7372, 0x2074, 0x6f62, 0x2079, 
+0x202f, 0x6967, 0x6c72, 0x2020, 0x7266, 0x6569, 0x646e, "\000" 
+    IDC_COMBO3, 0x403, 35, 0
+0x7453, 0x6261, 0x696c, 0x6873, 0x6e69, 0x2067, 0x6f63, 0x706d, 0x6e61, 
+0x2f79, 0x6f43, 0x7072, 0x6172, 0x6974, 0x6e6f, 0x2e2f, 0x2e2e, "\000" 
+    IDC_COMBO3, 0x403, 13, 0
+0x7542, 0x6979, 0x676e, 0x6120, 0x7020, 0x7465, "\000" 
+    IDC_COMBO3, 0x403, 17, 0
+0x6946, 0x7372, 0x2074, 0x6373, 0x6f68, 0x6c6f, 0x6420, 0x7961, "\000" 
+    0
+END
+
+#endif    // Unknown language: 0x29, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Reminder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
